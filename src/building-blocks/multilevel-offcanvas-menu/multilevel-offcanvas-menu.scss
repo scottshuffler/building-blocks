@@ -82,7 +82,7 @@ $offcanvas-padding: 20px;
     color: $nav-text-color;
   }
 
-  .is-accordion-submenu-parent > a::after {
+  .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after  {
     border-color: rgba($nav-text-color,.6) transparent transparent;
   }
 
@@ -114,7 +114,7 @@ $offcanvas-padding: 20px;
   }
 }
 
-.is-open + .off-canvas-content .hamburger {
+.off-canvas-content.is-open-right .hamburger {
   .line:nth-child(1),
   .line:nth-child(3) {
     width: 12px;
